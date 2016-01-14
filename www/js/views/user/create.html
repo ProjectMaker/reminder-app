@@ -1,0 +1,27 @@
+<ion-view>
+    <ion-content padding="false">
+        <div class="card">
+            <div class="item item-divider text-center">
+                Création d'un compte
+            </div>
+            <div class="item item-text-wrap">
+                <form>
+                    <div class="list">
+                        <label class="item item-input">
+                            <input type="text" placeholder="Pseudo" ng-model="user.pseudo">
+                        </label>
+                        <label class="item item-input">
+                            <input type="text" placeholder="Email" ng-model="user.email">
+                        </label>
+                        <label class="item item-input">
+                            <input type="text" placeholder="Password" ng-model="user.password">
+                        </label>
+                    </div>
+                </form>
+            </div>
+            <div class="item item-divider text-center">
+                <a class="button button-positive" ui-sref="create-user-confirmation">Créez mon compte</a>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
