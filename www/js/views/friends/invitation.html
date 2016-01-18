@@ -1,0 +1,21 @@
+<ion-view>
+    <ion-content>
+        <div class="card">
+            <div class="item item-divider item-icon-right">
+                Invitations
+
+                <i class="icon ion-ios-minus-outline"
+                   ng-click="data.showDelete = !data.showDelete;"></i>
+            </div>
+            <ion-list class="list" show-delete="data.showDelete">
+                <ion-item class="item item-icon-right" ng-repeat="user in users">
+                    <h2>{{ user }}</h2>
+                    <ion-delete-button class="ion-minus-circled" ng-click="cancelFriendRequest(friend)">
+                    </ion-delete-button>
+                    <i class="icon ion-person-add ion-little positive" ng-click="sendRequest(user)">
+                    </i>
+                </ion-item>
+            </ion-list>
+        </div>
+    </ion-content>
+</ion-view>

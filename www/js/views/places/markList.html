@@ -1,0 +1,18 @@
+<ion-view>
+    <ion-content>
+        <form>
+            <div class="list">
+                <label class="item item-input">
+                    <i class="icon ion-search placeholder-icon"></i>
+                    <input type="text" placeholder="Where are you ?" ng-model="user.pseudo">
+                </label>
+            </div>
+        </form>
+        <ion-list>
+            <ion-item ng-repeat="place in places" class="item item-icon-right" ui-sref="places.mark-create">
+                {{ place }}
+                <i class="icon ion-ios-checkmark positive"></i>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

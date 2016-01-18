@@ -1,0 +1,13 @@
+<ion-modal-view>
+    <ion-header-bar>
+        <h1 class="title">Last comments</h1>
+        <div class="buttons">
+            <button class="button button-icon icon ion-close-circled" ng-click="closeModal()"></button>
+        </div>
+    </ion-header-bar>
+    <ion-content>
+        <div class="list">
+            <div class="item" ng-repeat="comment in comments">{{ comment }}</div>
+        </div>
+    </ion-content>
+</ion-modal-view>

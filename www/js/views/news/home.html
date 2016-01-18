@@ -1,13 +1,5 @@
 <ion-view>
-    <ion-content>
-        <div class="row">
-            <div class="col text-center">
-                <a class="button button-positive">Mark a place</a>
-            </div>
-            <div class="col text-center">
-                <a class="button button-positive">Search a place</a>
-            </div>
-        </div>
+    <ion-content padding="false">
         <div class="row">
             <div class="col text-center">
                 <img class="full-image" src="img/images.png" />
@@ -19,8 +11,8 @@
                     <button class="button-icon icon ion-thumbsup">22</button>
                 </div>
                 <div class="col text-right">
-                    <button class="button-icon icon ion-chatbubble-working"></button>
-                    <button class="button-icon icon ion-forward pull-right"></button>
+                    <button class="button button-icon icon ion-chatbubble-working" ng-click="openModal()"></button>
+                    <button class="button button-icon icon ion-forward"></button>
                 </div>
 
             </div>

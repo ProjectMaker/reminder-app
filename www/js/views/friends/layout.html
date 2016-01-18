@@ -11,20 +11,20 @@
             </ion-nav-buttons>
 
             <ion-nav-buttons side="right">
-                <a class="button button-icon icon ion-person-stalker button-small" ui-sref="friends.home"></a>
+                <a class="button button-icon icon ion-home button-small" ui-sref="news.home"></a>
                 <a class="button button-icon icon ion-chatbubbles button-small"></a>
             </ion-nav-buttons>
         </ion-nav-bar>
 
         <ion-tabs class="tabs-icon-top tabs-positive">
-            <ion-tab title="Home" icon="ion-home" ui-sref="news.home">
-                <ion-nav-view name="news-home"></ion-nav-view>
+            <ion-tab title="Inviter" icon="ion-email" ui-sref="friends.home">
+                <ion-nav-view name="friends-home"></ion-nav-view>
             </ion-tab>
-            <ion-tab title="Mark a place" icon="ion-ios-star" ng-click="openPopover($event)" >
-                <ion-nav-view name="places-mark"></ion-nav-view>
+            <ion-tab title="Invitations" icon="ion-person-add" ui-sref="friends.invitation">
+                <ion-nav-view name="friends-invitation"></ion-nav-view>
             </ion-tab>
-            <ion-tab title="Search a place" icon="ion-ios-search-strong" ui-sref="places.search-form">
-                <ion-nav-view name="places-search"></ion-nav-view>
+            <ion-tab title="Suggestions" icon="ion-beer" ui-sref="friends.suggestion">
+                <ion-nav-view name="friends-suggestion"></ion-nav-view>
             </ion-tab>
         </ion-tabs>
     </ion-side-menu-content>

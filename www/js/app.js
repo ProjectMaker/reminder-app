@@ -12,7 +12,10 @@ var app = angular.module('reminder', ['ionic'])
     if(window.StatusBar) {
       StatusBar.styleDefault();
     }
+    ionic.Platform.ready(function () {
+      ionic.Platform.fullScreen(true,true);
+    });
+    $location.path('/places/search');
 
-    $location.path('/friends/home');
   });
 })

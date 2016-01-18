@@ -7,14 +7,10 @@
                 </button>
             </ion-nav-buttons>
             <ion-nav-title>
-                <label class="item item-input">
-                    <i class="icon ion-search placeholder-icon"></i>
-                    <input type="text" placeholder="Search" ng-model="user.pseudo">
-                </label>
+                Mark a place
             </ion-nav-title>
             <ion-nav-buttons side="right">
-                <!-- <button class="button button-icon icon ion-person-stalker"></button>
-                <button class="button button-icon icon ion-chatboxes"></button> -->
+                <button class="button button-icon icon ion-help"></button>
             </ion-nav-buttons>
         </ion-nav-bar>
 
@@ -22,12 +18,13 @@
             <ion-tab title="Home" icon="ion-home" ui-sref="news.home">
                 <ion-nav-view name="news-home"></ion-nav-view>
             </ion-tab>
-            <ion-tab title="Friends" icon="ion-person-stalker" ui-sref="friends.home">
+            <ion-tab title="Friends" icon="ion-person-stalker" onui-sref="friends.home">
                 <ion-nav-view name="friends-home"></ion-nav-view>
             </ion-tab>
-            <ion-tab title="Notification" icon="ion-chatboxes" ui-sref="news.home">
-                <ion-nav-view name="news-home"></ion-nav-view>
+            <ion-tab title="Notification" icon="ion-chatboxes" ui-sref="notification.home">
+                <ion-nav-view name="notification-home"></ion-nav-view>
             </ion-tab>
+            </ion-tabs>
     </ion-side-menu-content>
 
 
@@ -35,7 +32,7 @@
     <ion-side-menu side="left">
         <ion-content>
             <div class="list">
-                <div class="item dark-bg light dark-border">Home</div>
+                <div class="item dark-bg light dark-border"><a ui-sref="news.home">Home</a></div>
                 <div class="item dark-bg light dark-border">Mark a place</div>
                 <div class="item dark-bg light dark-border">Search a place</div>
                 <div class="item dark-bg light dark-border">Notifications</div>

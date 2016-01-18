@@ -20,19 +20,25 @@
                         <a class="button button-positive button-small">Go</a>
                     </div>
                 </div>
-                <h4><a  ui-sref="create-user">Créer un compte</a></h4>
-                <h4><a ui-sref="news.home">{ Fil d'actus }</a></h4>
             </div>
             <div class="col">
                 <div class="card">
                     <div class="item item-divider">
-                        Quick connect
+                        Quick
                     </div>
                     <div class="item item-text-wrap">
-                        <a class="button button-positive button-small button-block">Facebook</a>
-                        <a class="button button-assertive button-small button-block">Google+</a>
+                        <button class="button button-positive button-small icon-left ion-social-facebook">Facebook</button>
+                        <br/><br/>
+                        <a class="button button-assertive button-small icon-left ion-social-googleplus">Google+</a>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button class="button button-positive button-small icon-left ion-ios-color-wand-outline" ui-sref="create-user">Créer un compte</button>
+                <br/><br/>
+                <button class="button button-energized button-small icon-left ion-ios-unlocked" ui-sref="news.home">Fil d'actus</button>
             </div>
         </div>
     </ion-content>
